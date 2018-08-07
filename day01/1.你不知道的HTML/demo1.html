@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>利用图片计算网速</title>
+</head>
+<body>
+    <img crossorigin="anonymous" src="" alt="">
+    <script>
+        var s = Date.now();
+        var image = new Image();
+        image.src = 'http://www.yideng.com/ok.png';
+        image.onload = function (){
+            var e = Date.now();
+            var w = 4/e-s;
+        };
+
+
+        //系统性能监控平台 
+        image.src = 'http://www.yideng.com/ok.png';
+        image.onload = function (){
+            var e = Date.now();
+            var w = 4/e-s;
+        };
+    </script>
+</body>
+</html>
