@@ -7,6 +7,9 @@
     <title>利用iframe本地localStorage的扩容</title>
 </head>
 <body>
-    
+    <iframe src='localhost/storage.html' frameborder='0'></iframe>
+    <script>
+        window.frames[0].postMessage('yideng', '11');
+    </script>
 </body>
 </html>
